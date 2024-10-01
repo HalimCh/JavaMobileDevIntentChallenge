@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#299FFD"
+    android:textAlignment="center"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="409dp"
+        android:layout_height="729dp"
+        android:layout_marginTop="70dp"
+        android:background="#FFFFFF"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.044">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:text="Contact App"
+            android:textAlignment="center"
+            android:textColor="#35A2F8"
+            android:textSize="34sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/mood"
+            android:layout_width="match_parent"
+            android:layout_height="71dp"
+            android:visibility="gone"
+            app:srcCompat="@drawable/baseline_add_reaction_24" />
+
+        <ImageView
+            android:id="@+id/tel"
+            android:layout_width="match_parent"
+            android:layout_height="79dp"
+            android:visibility="gone"
+            app:srcCompat="@drawable/baseline_add_ic_call_24" />
+
+        <ImageView
+            android:id="@+id/webb"
+            android:layout_width="match_parent"
+            android:layout_height="82dp"
+            android:visibility="gone"
+            app:srcCompat="@drawable/baseline_date_range_24" />
+
+        <ImageView
+            android:id="@+id/loc"
+            android:layout_width="match_parent"
+            android:layout_height="109dp"
+            android:visibility="gone"
+            app:srcCompat="@drawable/baseline_location_on_24" />
+
+        <Button
+            android:id="@+id/createContactButton"
+            android:layout_width="306dp"
+            android:layout_height="wrap_content"
+            android:background="#03A9F4"
+            android:text="Create New Contact"
+            android:textColor="#FBFBFB"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="409dp"
+        android:layout_height="65dp"
+        android:layout_marginBottom="2dp"
+        android:background="#39A6FA"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="259dp"
+            android:layout_height="47dp"
+            android:layout_marginTop="12dp"
+            android:text="Halim App"
+            android:textAlignment="center"
+            android:textColor="#F4EFEF"
+            android:textSize="34sp"
+            android:textStyle="bold|italic"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="73dp"
+            android:layout_height="63dp"
+            android:layout_marginEnd="2dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/textView2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/halim" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
